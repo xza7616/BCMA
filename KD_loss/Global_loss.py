@@ -7,8 +7,8 @@ from mmengine.model import constant_init, kaiming_init
 class BCMALoss(nn.Module):
 
     def __init__(self,
-                 student_channels,
-                 teacher_channels,
+                 s_channels,
+                 t_channels,
                  temp=0.5,
                  gamma=0.5,
                  lambda_=1):
